@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f7f6;
+}
+
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background: #e9f5f2;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+  color: #264653;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+  color: #2a9d8f;
+  transform: scale(1.1);
+}
+
+.cta-buttons .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-outline {
+  background: #f0fdf4;
+  color: #2a9d8f;
+}
+
+.btn-outline:hover {
+  background: #ccf4d5;
+}
+
+.btn-primary {
+  background: #2a9d8f;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #21867a;
+}
+
+.services-page {
+  padding: 50px 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #264653;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #2a9d8f;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-item {
+  background: #f0fdf4; /* Light green background */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  margin: 20px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Add padding inside the container */
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.service-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.service-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items */
+  text-align: center; /* Center-align text */
+  height: 100%; /* Ensure content fills the height */
+}
+
+.service-content h2 {
+  color: #2a9d8f;
+  margin-bottom: 10px;
+  flex: 0 0 auto; /* Prevent stretching */
+  text-align: center; /* Center align the heading */
+  width: 100%; /* Make heading take full width */
+}
+
+.service-content p {
+  color: #264653;
+  margin-bottom: 20px;
+  text-align: left; /* Align paragraphs to the left */
+  min-height: 250px; /* Ensure a consistent minimum height */
+}
+
+.service-content ul {
+  list-style-type: disc;
+  padding-left: 40px; /* Increased padding for better alignment */
+  color: #264653;
+  animation: fadeIn 2s ease-in-out; /* Apply animation */
+  margin-top: 20px; /* Add margin to separate from paragraphs */
+  font-size: 18px; /* Increase font size */
+  width: 100%; /* Make the list take full width */
+  text-align: left; /* Align text to the left */
+}
+
+.service-content ul li {
+  font-weight: bold;
+  color: #2a9d8f;
+  margin: 10px 0; /* Increase margin for better spacing */
+  padding: 10px; /* Increase padding for better spacing */
+  border-radius: 5px;
+  background: #ffffff; /* White background for list items */
+  transition: background 0.3s, transform 0.3s;
+  font-size: 20px; /* Increase font size */
+  display: flex;
+  align-items: center; /* Center-align items vertically */
+}
+
+.service-content ul li::before {
+  content: "•";
+  color: #2a9d8f;
+  font-size: 24px; /* Make the bullet larger */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.service-content ul li:hover {
+  background: #e9f5f2;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.btn-learn-more {
+  background-color: #264653;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  align-self: center; /* Center-align the button */
+  margin-top: auto; /* Push button to the bottom */
+}
+
+.btn-learn-more:hover {
+  background-color: #1d3e4b;
+}
+
+.footer {
+  background-color: #264653;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
